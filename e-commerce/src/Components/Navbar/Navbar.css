@@ -1,0 +1,45 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  width: 90%;
+  margin: auto;
+  /* border: 1px solid black; */
+}
+.short-by{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+  /* border: 1px solid black; */
+}
+.menu{
+  font-size: 20px;
+  margin-right: 6px;
+  display: flex;
+  align-items: center;
+}
+.arrow{
+  font-size: 20px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar ul {
+  display: flex;
+
+  gap: 30px;
+  list-style: none;
+
+}
+.icon{
+  font-size: 24px;
+}
+
+.text{
+  font-weight: 900;
+}
+
+  
