@@ -51,10 +51,15 @@ right-header ul li:hover {
   color: #e63946;
   font-weight: bold;
 }
+/* .navigation{
+  border: 1px solid
+  #eee;
+} */
 
 .navigation ul {
   display: flex;
   gap: 30px;
+
 }
 
 .navigation ul li {
