@@ -1,6 +1,31 @@
+/* header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 3000; /* sidebar bhanda mathi */
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 200px;
+  margin-bottom: 20px;
+} */ 
+
 .container {
   width: 90%;
   margin: auto;
+}
+
+
+
+.container {
+  width: 90%;
+  margin: auto;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  z-index: 3000;
+   */
   /* border: 1px solid #ccc; */
 }
 
@@ -81,13 +106,14 @@ right-header ul li:hover {
   border: 1px solid #ccc;
   border-radius: 20px;
   overflow: hidden;
-  width: 300px;
+  width: 500px;
+  
 }
 
 .search-box input {
   border: none;
   outline: none;
-  padding: 0px 12px;
+  padding: 0px 22px;
   flex: 1;
   outline: none;
 }

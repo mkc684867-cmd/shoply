@@ -42,44 +42,25 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="navigation">
-            <ul>
-              <li>
-                <Link to="/" className="nav-link">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/fashion" className="nav-link">
-                  Fashion
-                </Link>
-              </li>
-              <li>
-                <Link to="/new-arrivals" className="nav-link">
-                  New Arrivals
-                </Link>
-              </li>
-              <li>
-                <Link to="/brands" className="nav-link">
-                  All Brands
-                </Link>
-              </li>
-              <li>
-                <Link to="/more" className="nav-link">
-                  More
-                </Link>
-              </li>
-            </ul>
-          </nav>
-
-          {/* Icons + Search + Login */}
-          <div className="icons">
-            {/* Search Box */}
             <div className="search-box">
               <input type="text" placeholder="प्रोडक्ट खोज्नुहोस्" />
               <button>
                 <FaMagnifyingGlass size={18} />
               </button>
             </div>
+
+            
+          </nav>
+
+          {/* Icons + Search + Login */}
+          <div className="icons">
+            {/* Search Box */}
+            {/* <div className="search-box">
+              <input type="text" placeholder="प्रोडक्ट खोज्नुहोस्" />
+              <button>
+                <FaMagnifyingGlass size={18} />
+              </button>
+            </div> */}
 
             {/* Login/Register + Badges */}
             <div className="log-register">

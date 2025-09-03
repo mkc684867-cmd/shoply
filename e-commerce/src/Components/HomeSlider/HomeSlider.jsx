@@ -29,6 +29,9 @@ const HomeSlider = () => {
     pexels,
   ];
 
+
+
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {

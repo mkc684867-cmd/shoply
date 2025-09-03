@@ -2,6 +2,53 @@
   border: 1px solid black;
 } */
 
+/* nav{
+  position: fixed;
+  top: 100px; /* header ko total height jati */
+  /* left: 0;
+  width: 100%;
+  background: white;
+  z-index: 2500; header bhanda tala, sidebar bhanda mathi */
+  /* border-bottom: 1px solid #ccc; */
+
+/* nav{
+  position: fixed;
+} */
+
+/* .nav {
+  position: fixed;
+  top: 100px;   /* Header को height */
+  /* left: 0;
+  width: 100%;
+  background: white;
+  z-index: 2500;   /* Header भन्दा तल, Sidebar भन्दा माथि */
+  /* border-bottom: 1px solid #ccc;
+} */ 
+ /* nav {
+  position: fixed; /* Changed from fixed */
+  /* top: 140px; /* Changed from 100px */
+  /* left: 0;
+  width: 100%;
+  background: white;
+  z-index: 3000; /* Reduced from 2500 */
+  /* border-bottom: 1px solid #ccc;
+} */ 
+
+/* nav {
+  position: fixed;
+  top: 100px;   /* Header को total height */
+
+/* } */ 
+/* nav {
+  position: fixed;
+  /* top: 200px;   Header को total height */
+  /* left: 0;
+  width: 100%;
+  background: white;
+  z-index: 2500;   /* Header भन्दा तल, Sidebar भन्दा माथि */
+  /* border-bottom: 1px solid #ccc;
+} */ 
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -12,6 +59,10 @@
   border-bottom: 1px solid #ccc;
   margin-bottom: 30px;
   /* border: 1px solid black; */
+  /* position: fixed; */
+  /* top: 0; */
+  /* z-index: 2000; */
+  
 }
 .short-by {
   display: flex;
