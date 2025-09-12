@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import clothes from "../../assets/images/clothes.jpg";
 import freeStock from "../../assets/images/freeStock.jpg";
 import gadgets from "../../assets/images/gadgets.jpg";
@@ -28,22 +28,31 @@ const HomeSlider = () => {
     laptop,
     pexels,
   ];
+  // useEffect(() => {
+  //   setInterval(()=>{
+  //     setCurrentIndex((prev)=> (prev === slides.length - 1 ? 0 : prev + 1 ))
+  //   }, 2000)
+  // }, []);
 
+  useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentIndex((prev) =>
+      prev === slides.length - 1 ? 0 : prev + 1
+    );
+  }, 3000);
 
+  return () => clearInterval(interval);
+}, []); // empty dependency → mount हुँदा मात्र चल्छ
 
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? slides.length - 1 : prev - 1
-    );
+    setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   };
 
   const goToNext = () => {
-    setCurrentIndex((prev) =>
-      prev === slides.length - 1 ? 0 : prev + 1
-    );
+    setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
 
   return (

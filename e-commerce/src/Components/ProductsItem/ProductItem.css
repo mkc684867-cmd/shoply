@@ -1,0 +1,215 @@
+.product-item {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: #f8f9fa;
+}
+
+/* --- HEADER --- */
+.product-item-header {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.heading h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.offer {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #555;
+}
+
+/* --- NAV LINKS --- */
+.links-tab {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.links-tab li {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* --- PRODUCT LIST WRAPPER --- */
+.products {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow: hidden; /* Container should not scroll itself */
+  padding: 10px 0;
+  position: relative;
+}
+
+/* --- PRODUCT SLIDER CONTAINER --- */
+.product-slider-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-behavior: smooth;
+  position: relative;
+  /* Hide scrollbar but keep scroll functionality */
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.product-slider-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* --- PRODUCT CARD --- */
+.product-list {
+  flex: 0 0 auto;
+  width: 280px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-list:hover {
+  transform: translateY(-5px);
+}
+
+/* --- PRODUCT IMAGE --- */
+.product-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  display: block;
+}
+
+/* --- DISCOUNT BADGE --- */
+.discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #dc3545;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* --- PRODUCT DETAILS --- */
+.product-details {
+  text-align: left;
+  padding: 10px;
+}
+
+.product-details p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+  color: #555;
+}
+
+.product-details h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.rating {
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  color: #ff9800;
+}
+
+/* --- PRICE SECTION --- */
+.price-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.original-price {
+  font-size: 0.85rem;
+  text-decoration: line-through;
+  color: #888;
+}
+
+.discounted-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #F54927;
+}
+
+/* --- ADD TO CART BUTTON --- */
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid #F54927 !important;
+  color: #F54927 !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  padding: 6px 55px !important;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-to-cart:hover {
+  background: #F54927 !important;
+  color: #fff !important;
+  border-color: #F54927 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-cart {
+  display: flex;
+  justify-content: center;
+}
+
+/* --- SCROLL BUTTONS --- */
+.scroll-btns {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-btns:hover {
+  background: #f54927;
+  color: white;
+}
+
+.scroll-btns.left {
+  left: 0; }
+
+.scroll-btns.right {
+  right: 0;
+}
