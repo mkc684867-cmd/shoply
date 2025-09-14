@@ -4,6 +4,7 @@ import HomeSlider2 from "../../Components/HomeSlider/HomeSlider2";
 import { PiVanLight } from "react-icons/pi";
 import AddSlider from "../../Components/AddSlider/AddSlider";
 import ProductItem from "../../Components/ProductsItem/ProductItem";
+import Blog from "../../Components/Blog/Blog";
 // import adv1 from '../../assets/images/adv1.jpg'
 // import adv2 from '../../assets/images/adv2.jpg'
 // import adv3 from '../../assets/images/adv3.jpg'
@@ -18,7 +19,7 @@ const Home = () => {
     <>
       <HomeSlider />
       <HomeSlider2 />
-      <ProductItem />
+      <ProductItem heading= "Popuar Products" offer = "Do not miss the current offers until the end of March"/>
       <section className="free-delivery-sec">
         <div className="free-sec-container">
           <div className="free-sec-logo">
@@ -40,8 +41,15 @@ const Home = () => {
 
       </section>
       {/* < HomeSlider /> */}
+      <ProductItem heading="Latest Product" showNavbar={false}/>
       <AddSlider />
       {/* <ProductItem /> */}
+            <ProductItem heading="Featued Product" showNavbar={false}/>
+            <br />
+            <br />
+
+            < Blog />
+
 
 
     </>

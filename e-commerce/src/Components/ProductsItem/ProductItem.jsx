@@ -6,7 +6,7 @@ import fashion1 from "../../assets/images/fashion1.jpg"; // Fixed typo
 import Product from "./Product";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
-const ProductItem = () => {
+const ProductItem = ({heading, showNavbar = true, offer}) => {
   const scrollRef = useRef();
 
   const products = [
@@ -37,10 +37,13 @@ const ProductItem = () => {
     <div className="product-item">
       <div className="product-item-header">
         <div className="heading">
-          <h2>Popular Products</h2>
-          <p className="offer">Do not miss the current offers until the end of March</p>
+          <h2>{heading}</h2>
+          <p className="offer">{offer}</p>
         </div>
-        <ul className="links-tab">
+        {
+
+          showNavbar && (
+             <ul className="links-tab">
           {["FASHION", "ELECTRONICS", "FOOTWEAR", "GROCERIES", "BEAUTY", "WELLNESS", "JEWELLERY"].map((item) => (
             <li key={item}>
               <Link>
@@ -51,6 +54,11 @@ const ProductItem = () => {
             </li>
           ))}
         </ul>
+
+            
+          )
+        }
+       
       </div>
 
       <div className="products" style={{ position: "relative" }}>

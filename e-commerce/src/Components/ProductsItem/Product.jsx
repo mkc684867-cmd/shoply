@@ -1,6 +1,12 @@
 import Button from "@mui/material/Button";
 import React from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import { FaRegHeart } from "react-icons/fa";
+import { IoEyeOutline } from "react-icons/io5";
+import { PiRectangleDashedThin } from "react-icons/pi";
+
+
+
 
 const Product = ({
   image,
@@ -13,7 +19,15 @@ const Product = ({
 }) => {
   return (
     <div className="product-list">
+      <div className="product-img-container">
+
       <img className="product-img" src={image} alt={name} />
+      <div className="hover-buttons">
+        <button className="hover-btn"><IoEyeOutline /></button>
+        <button className="hover-btn"><FaRegHeart /></button>
+        <button className="hover-btn"><PiRectangleDashedThin/></button>
+      </div>
+      </div>
       <div className="discount">{discount}% OFF</div>
       <div className="product-details">
         <p>{brand}</p>
